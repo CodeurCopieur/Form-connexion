@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="index.css")
+    link(rel="stylesheet", href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css")
+    title Form connexion [SCSS, PUG]
+  body
+    header.hdr
+     .container__form
+        h1.container__title Hello
+        p.container__text Connectez-vous à votre compte
+        form(action="").form 
+          .form-group
+            input#username(type="text", name="username", placeholder="username").input-field
+            label(for="username") 
+              i.icon.ion-md-person
+          
+          .form-group
+            input#password(type="password", name="password", placeholder="password").input-field
+            label(for="password") 
+              i.icon.ion-md-lock
+          
+          .form-link
+            a(href="#").form__link-resetPassword Forget your password ?
+          
+          .form__btn
+            input(type="submit", value="Log in")
+    
+    script(src="index.js")

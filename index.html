@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"/>
+    <title>Form connexion [SCSS, PUG]</title>
+  </head>
+  <body>
+    <header class="hdr">
+      <div class="container__form">
+        <h1 class="container__title">Hello</h1>
+        <p class="container__text">Connectez-vous à votre compte</p>
+        <form class="form" action=""> 
+          <div class="form-group">
+            <input class="input-field" id="username" type="text" name="username" placeholder="username"/>
+            <label for="username"> <i class="icon ion-md-person"></i></label>
+          </div>
+          <div class="form-group">
+            <input class="input-field" id="password" type="password" name="password" placeholder="password"/>
+            <label for="password"> <i class="icon ion-md-lock"></i></label>
+          </div>
+          <div class="form-link"><a class="form__link-resetPassword" href="#">Forget your password ?</a></div>
+          <div class="form__btn">
+            <input type="submit" value="Log in"/>
+          </div>
+        </form>
+      </div>
+    </header>
+    <script src="index.js"></script>
+  </body>
+</html>
